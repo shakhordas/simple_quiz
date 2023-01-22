@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body style="background-color: grey;">
+
+    <div class="container">
+      <div class="row">
+        <dov class="col-md-7 p-5 bg-secondary shadow">
+          <h1 class="display-6 text-light pb-4">please Ans the some questions</h1>
+          <nav>
+            <h3>1. who is the prime minister of Bangladesh ?</h3>
+            <ul class="list-unstyled">
+              <li onclick="qus1('correct')">2. sheikh hasina</li>
+              <li onclick="qus1('Wrong')">2. shakhor das</li>
+              <li onclick="qus1('Wrong')">3. abdul hamid</li>
+              <li onclick="qus1('Wrong')">4. wovaidol quadar</li>
+            </ul>
+          </nav>
+          <button id="qus1-ans"></button>
+        </dov>
+
+        <dov class="col-md-7 p-5 bg-secondary shadow">
+          <nav>
+            <h3>2. who is the president of Bangladesh ?</h3>
+            <ul class="list-unstyled">
+              <li onclick="qus2('Wrong')">2. sheikh hasina</li>
+              <li onclick="qus2('Wrong')">2. shakhor das</li>
+              <li onclick="qus2('correct')">3. abdul hamid</li>
+              <li onclick="qus2('Wrong')">4. wovaidol quadar</li>
+            </ul>
+          </nav>
+          <button id="qus2-ans"></button>
+        </dov>
+
+        <dov class="col-md-7 p-5 bg-secondary shadow">
+          <nav>
+            <h3>3. H2O মানে কি ? ?</h3>
+            <ul class="list-unstyled">
+              <li onclick="qus3('Wrong')">2. লবন</li>
+              <li onclick="qus3('Wrong')">2. তেল</li>
+              <li onclick="qus3('Wrong')">3. সরিষা</li>
+              <li onclick="qus3('correct')">4. পানি</li>
+            </ul>
+          </nav>
+          <button id="qus3-ans"></button>
+        </dov>
+
+        <dov class="col-md-7 p-5 bg-secondary shadow">
+          <nav>
+            <h3>4. Alominium এর সংকেত কি ?</h3>
+            <ul class="list-unstyled">
+              <li onclick="qus4('Wrong')">2. S</li>
+              <li onclick="qus4('Wrong')">2. Mg</li>
+              <li onclick="qus4('correct')">3. Al</li>
+              <li onclick="qus4('Wrong')">4. P</li>
+            </ul>
+          </nav>
+          <button id="qus4-ans"></button>
+        </dov>
+
+        <dov class="col-md-7 p-5 bg-secondary shadow">
+          <nav>
+            <h3>5. JS এর মিনিং কি ?</h3>
+            <ul class="list-unstyled">
+              <li onclick="qus5('Wrong')">2. Jacastipt</li>
+              <li onclick="qus5('Wrong')">2. Java and Script</li>
+              <li onclick="qus5('correct')">3. Javascript</li>
+              <li onclick="qus5('Wrong')">4. Javascrpt</li>
+            </ul>
+          </nav>
+          <button id="qus5-ans"></button>
+        </dov>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+
+      function qus1(qus1Ans){
+        if (qus1Ans === "correct") {
+          document.getElementById("qus1-ans").innerHTML = qus1Ans ;
+          document.getElementById("qus1-ans").style.backgroundColor = "green" ;
+        }else{
+          document.getElementById("qus1-ans").innerHTML = qus1Ans ;
+          document.getElementById("qus1-ans").style.backgroundColor = "red" ;
+        }
+      }
+
+      function qus2(qus2Ans){
+        if (qus2Ans === "correct") {
+          document.getElementById("qus2-ans").innerHTML = qus2Ans ;
+          document.getElementById("qus2-ans").style.backgroundColor = "green" ;
+        }else{
+          document.getElementById("qus2-ans").innerHTML = qus2Ans ;
+          document.getElementById("qus2-ans").style.backgroundColor = "red" ;
+        }
+      }
+
+      function qus3(qus3Ans){
+        if (qus3Ans === "correct") {
+          document.getElementById("qus3-ans").innerHTML = qus3Ans ;
+          document.getElementById("qus3-ans").style.backgroundColor = "green" ;
+        }else{
+          document.getElementById("qus3-ans").innerHTML = qus3Ans ;
+          document.getElementById("qus3-ans").style.backgroundColor = "red" ;
+        }
+      }
+
+      function qus4(qus4Ans){
+        if (qus4Ans === "correct") {
+          document.getElementById("qus4-ans").innerHTML = qus4Ans ;
+          document.getElementById("qus4-ans").style.backgroundColor = "green" ;
+        }else{
+          document.getElementById("qus4-ans").innerHTML = qus4Ans ;
+          document.getElementById("qus4-ans").style.backgroundColor = "red" ;
+        }
+      }
+
+      function qus5(qus5Ans){
+        if (qus5Ans === "correct") {
+          document.getElementById("qus5-ans").innerHTML = qus5Ans ;
+          document.getElementById("qus5-ans").style.backgroundColor = "green" ;
+        }else{
+          document.getElementById("qus5-ans").innerHTML = qus5Ans ;
+          document.getElementById("qus5-ans").style.backgroundColor = "red" ;
+        }
+      }
+      
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
